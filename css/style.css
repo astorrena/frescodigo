@@ -31,26 +31,74 @@ header svg{
     padding: 104px 0;
 }
 .post-card{
-    /* border-radius: 24px; */
     padding:32px;
-    
     background-color: #e2e2e2;
     width: calc((100% /3) - 1.4vw);
     max-width: 600px;
     /* box-shadow: rgba(149, 157, 165, 0.1) 0px 0px 24px;
     border: 2px solid #032b36; */
     cursor: pointer;
+    color:#032b36;
+    transition: all ease; 
 }
 .post-card:hover{
-    background-color: #032b36;
-}
+    background-color: #000333;
+    color: white;
 
+}
+.post-card span{
+    font-size: 16px;
+    font-family: basier_circleregular;
+    background-color: #cdcdcd;
+    padding: 6px 8px;
+    border-radius: 50px;
+    margin-right: 8px;
+    transition: all .2s ease;
+}
+.post-card:hover span{
+    background-color: #DDFD1C;
+    /* background-color: #121760; */
+    color:#000333;
+
+    /* color:#DDFD1C;  */
+}
 .post-card h2{
     font-size: 20px;
     line-height: 1.4;
     font-family: basier_circlesemibold;
-    color:#032b36;
+    margin-top: 16px;
+    transition: all .2s ease;
 }
-.post-card:hover h2{
-    color: white;
+.post-card h2{
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: basier_circlesemibold;
+}
+.cnt-flecha{
+    display: flex;
+    justify-content: end;
+    
+}
+.post-card svg{
+    max-width: 20px;
+    fill:#000333;
+    transition: all .2s ease;
+}
+.post-card:hover svg{
+    fill:#DDFD1C;
+    transform: translate(4px, -4px);
+}
+
+@media (max-width:1024px){
+    .post-card{
+        width: calc((100% /2) - 1.4vw);
+    }
+}
+@media (max-width:650px){
+    .post-grid{
+        gap: 16px;
+    }
+    .post-card{
+        width:100%;
+    }
 }
