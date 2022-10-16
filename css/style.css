@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 body{
-    
     padding: 0 50px;
 }
 main{
@@ -12,8 +11,15 @@ main{
     margin: auto;
 }
 header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 104px;
     border-bottom: 1px solid rgb(181, 181, 181);
+
+}
+header svg{
+    max-width: 150px;
 }
 .post-grid{
     display: flex;
