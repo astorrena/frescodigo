@@ -95,8 +95,12 @@ header svg{
     }
 }
 @media (max-width:650px){
+    body{
+        padding: 0 20px;
+    }
     .post-grid{
         gap: 16px;
+        padding: 56px 0;
     }
     .post-card{
         width:100%;
